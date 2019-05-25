@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -18,7 +19,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.PriorityQueue;
 
-public class Booking extends AppCompatActivity implements AdapterView.OnItemSelectedListener, DatePickerDialog.OnDateSetListener {
+public class Booking extends AppCompatActivity implements AdapterView.OnItemSelectedListener, DatePickerDialog.OnDateSetListener, Bottom_Sheet.BottomSheetListner {
 
 
     Spinner spinner;
@@ -28,6 +29,7 @@ public class Booking extends AppCompatActivity implements AdapterView.OnItemSele
     int hour, min;
     private TimePickerDialog timePickerDialog;
     String a,b;
+    Button buttonSubmit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +41,8 @@ public class Booking extends AppCompatActivity implements AdapterView.OnItemSele
 
         textStartTime = (TextView) findViewById(R.id.textStartTime);
         textEndTime = (TextView) findViewById(R.id.textEndTime);
+
+        buttonSubmit = (Button) findViewById(R.id.buttonSubmit);
 
 
         textView.setOnClickListener(new View.OnClickListener() {
@@ -90,6 +94,14 @@ public class Booking extends AppCompatActivity implements AdapterView.OnItemSele
             }
         });
 
+        buttonSubmit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Bottom_Sheet bottom_sheet = new Bottom_Sheet();
+                bottom_sheet.show(getSupportFragmentManager(),"Bottom Sheet");
+            }
+        });
+
         ArrayAdapter<CharSequence> adapter =  ArrayAdapter.createFromResource(this,R.array.vehicles_type,android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
@@ -127,4 +139,8 @@ public class Booking extends AppCompatActivity implements AdapterView.OnItemSele
     }
 
 
+    @Override
+    public void onButtonClicked(String text) {
+        Toast.makeText(getApplicationContext(),text,Toast.LENGTH_LONG).show();
+    }
 }

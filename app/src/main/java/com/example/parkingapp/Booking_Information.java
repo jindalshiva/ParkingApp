@@ -1,24 +1,20 @@
 package com.example.parkingapp;
 
-import java.sql.Time;
-import java.util.Date;
-
 public class Booking_Information {
 
-    String vehicleType,vehicleNo,slot1;
-    Date date;
-    Time time;
+    private String vehicleType,vehicleNo, slot,userId,date,stime,etime;
 
     Booking_Information(){
-
     }
 
-    public Booking_Information(String vehicleType, String vehicleNo, String slot1, Date date, Time time) {
+    public Booking_Information(String vehicleType, String vehicleNo, String slot, String userId, String date, String stime, String etime) {
         this.vehicleType = vehicleType;
         this.vehicleNo = vehicleNo;
-        this.slot1 = slot1;
+        this.slot = slot;
+        this.userId = userId;
         this.date = date;
-        this.time = time;
+        this.stime = stime;
+        this.etime = etime;
     }
 
     public String getVehicleType() {
@@ -37,27 +33,43 @@ public class Booking_Information {
         this.vehicleNo = vehicleNo;
     }
 
-    public String getSlot1() {
-        return slot1;
+    public String getSlot() {
+        return slot;
     }
 
-    public void setSlot1(String slot1) {
-        this.slot1 = slot1;
+    public void setSlot(String slot) {
+        this.slot = slot;
     }
 
-    public Date getDate() {
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
+
+    public String getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(String date) {
         this.date = date;
     }
 
-    public Time getTime() {
-        return time;
+    public String getStime() {
+        return stime;
     }
 
-    public void setTime(Time time) {
-        this.time = time;
+    public void setStime(String stime) {
+        this.stime = stime;
+    }
+
+    public String getEtime() {
+        return etime;
+    }
+
+    public void setEtime(String etime) {
+        this.etime = etime;
     }
 }

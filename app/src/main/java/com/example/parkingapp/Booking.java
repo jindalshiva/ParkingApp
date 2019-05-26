@@ -184,7 +184,7 @@ public class Booking extends AppCompatActivity implements AdapterView.OnItemSele
                         Toast.makeText(getApplicationContext(),"you choose yes action for alertbox",
                                 Toast.LENGTH_SHORT).show();
                         BookingInformation();
-                        Intent intent = new Intent(Booking.this,PaytmFacility.class);
+                        Intent intent = new Intent(Booking.this,MapsActivity.class);
                         startActivity(intent);
                     }
                 })

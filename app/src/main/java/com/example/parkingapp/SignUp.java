@@ -169,3 +169,141 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
         }
     }
 }
+
+
+
+
+//<Button
+//        android:layout_width="100dp"
+//                android:layout_height="wrap_content"
+//                android:background="@drawable/slot_round"
+//                android:text="slot 1"
+//                android:textColor="#000000"
+//                android:textStyle="bold"
+//                android:layout_marginTop="40dp"
+//                android:layout_marginRight="40dp"
+//                android:layout_marginLeft="40dp"
+//                android:id="@+id/buttonSlot1"
+//                />
+//<Button
+//        android:layout_width="100dp"
+//                android:layout_height="wrap_content"
+//                android:background="@drawable/slot_round"
+//                android:text="slot 2"
+//                android:layout_toRightOf="@id/buttonSlot1"
+//
+//                android:textColor="#000000"
+//                android:textStyle="bold"
+//                android:layout_marginTop="40dp"
+//                android:layout_marginRight="40dp"
+//                android:layout_marginLeft="40dp"
+//                android:id="@+id/buttonSlot2"
+//                />
+//<Button
+//        android:layout_width="100dp"
+//                android:layout_height="wrap_content"
+//                android:background="@drawable/slot_round"
+//                android:text="slot 3"
+//                android:layout_below="@id/buttonSlot1"
+//                android:textColor="#000000"
+//                android:textStyle="bold"
+//                android:layout_marginTop="40dp"
+//                android:layout_marginRight="40dp"
+//                android:layout_marginLeft="40dp"
+//                android:id="@+id/buttonSlot3"
+//                />
+//<Button
+//        android:layout_width="100dp"
+//                android:layout_height="wrap_content"
+//                android:background="@drawable/slot_round"
+//                android:text="slot 4"
+//                android:textColor="#000000"
+//                android:textStyle="bold"
+//                android:id="@+id/buttonSlot4"
+//                android:layout_marginTop="40dp"
+//                android:layout_marginRight="40dp"
+//                android:layout_marginLeft="40dp"
+//                android:layout_toRightOf="@id/buttonSlot3"
+//                android:layout_below="@id/buttonSlot2"
+//                />
+//<Button
+//        android:layout_width="100dp"
+//                android:layout_height="wrap_content"
+//                android:background="@drawable/slot_round"
+//                android:text="slot 5"
+//                android:textColor="#000000"
+//                android:textStyle="bold"
+//                android:layout_marginTop="40dp"
+//                android:layout_marginRight="40dp"
+//                android:layout_marginLeft="40dp"
+//                android:layout_below="@id/buttonSlot3"
+//                android:id="@+id/buttonSlot5"
+//                />
+//<Button
+//        android:layout_width="100dp"
+//                android:layout_height="wrap_content"
+//                android:background="@drawable/slot_round"
+//                android:text="slot 6"
+//                android:textColor="#000000"
+//                android:textStyle="bold"
+//                android:id="@+id/buttonSlot6"
+//                android:layout_marginTop="40dp"
+//                android:layout_marginRight="40dp"
+//                android:layout_marginLeft="40dp"
+//                android:layout_below="@id/buttonSlot4"
+//                android:layout_toRightOf="@id/buttonSlot5"
+//                />
+//<Button
+//        android:layout_width="100dp"
+//                android:layout_height="wrap_content"
+//                android:background="@drawable/slot_round"
+//                android:text="slot 7"
+//                android:textColor="#000000"
+//                android:textStyle="bold"
+//                android:layout_marginTop="40dp"
+//                android:layout_marginRight="40dp"
+//                android:layout_marginLeft="40dp"
+//                android:id="@+id/buttonSlot7"
+//                android:layout_below="@id/buttonSlot5"
+//                />
+//<Button
+//        android:layout_width="100dp"
+//                android:layout_height="wrap_content"
+//                android:background="@drawable/slot_round"
+//                android:text="slot 8"
+//                android:textColor="#000000"
+//                android:textStyle="bold"
+//                android:id="@+id/buttonSlot8"
+//                android:layout_marginTop="40dp"
+//                android:layout_marginRight="40dp"
+//                android:layout_marginLeft="40dp"
+//                android:layout_below="@id/buttonSlot6"
+//                android:layout_toRightOf="@id/buttonSlot7"
+//                />
+//<Button
+//        android:layout_width="100dp"
+//                android:layout_height="wrap_content"
+//                android:background="@drawable/slot_round"
+//                android:text="slot 9"
+//                android:textColor="#000000"
+//                android:textStyle="bold"
+//                android:id="@+id/buttonSlot9"
+//                android:layout_marginTop="40dp"
+//                android:layout_marginRight="40dp"
+//                android:layout_marginLeft="40dp"
+//                android:layout_below="@id/buttonSlot7"
+//                />
+//<Button
+//        android:layout_width="100dp"
+//                android:layout_height="wrap_content"
+//                android:background="@drawable/slot_round"
+//                android:text="slot 10"
+//                android:textColor="#000000"
+//                android:textStyle="bold"
+//                android:layout_margin="40dp"
+//                android:id="@+id/buttonSlot10"
+//                android:layout_marginTop="40dp"
+//                android:layout_marginRight="40dp"
+//                android:layout_marginLeft="40dp"
+//                android:layout_below="@id/buttonSlot8"
+//                android:layout_toRightOf="@id/buttonSlot9"/>

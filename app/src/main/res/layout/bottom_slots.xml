@@ -1,142 +1,1393 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/button_view"
+
     >
-    <Button
-        android:layout_width="100dp"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/slot_round"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="12dp"
+        android:id="@+id/buttonSlo1"
         android:text="slot 1"
-        android:textColor="#000000"
+        android:textColor="#ffffff"
         android:textStyle="bold"
-        android:layout_marginTop="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginLeft="40dp"
-        android:id="@+id/buttonSlot1"
         />
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/slot_round"
-        android:text="slot 2"
-        android:layout_toRightOf="@id/buttonSlot1"
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot2"
+            android:text="slot 2"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot3"
+            android:text="slot 3"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot4"
+            android:text="slot 4"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
 
-        android:textColor="#000000"
-        android:textStyle="bold"
-        android:layout_marginTop="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginLeft="40dp"
-        android:id="@+id/buttonSlot2"
-        />
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/slot_round"
-        android:text="slot 3"
-        android:layout_below="@id/buttonSlot1"
-        android:textColor="#000000"
-        android:textStyle="bold"
-        android:layout_marginTop="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginLeft="40dp"
-        android:id="@+id/buttonSlot3"
-        />
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/slot_round"
-        android:text="slot 4"
-        android:textColor="#000000"
-        android:textStyle="bold"
-        android:id="@+id/buttonSlot4"
-        android:layout_marginTop="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_toRightOf="@id/buttonSlot3"
-        android:layout_below="@id/buttonSlot2"
-        />
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/slot_round"
-        android:text="slot 5"
-        android:textColor="#000000"
-        android:textStyle="bold"
-        android:layout_marginTop="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_below="@id/buttonSlot3"
-        android:id="@+id/buttonSlot5"
-        />
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/slot_round"
-        android:text="slot 6"
-        android:textColor="#000000"
-        android:textStyle="bold"
-        android:id="@+id/buttonSlot6"
-        android:layout_marginTop="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_below="@id/buttonSlot4"
-        android:layout_toRightOf="@id/buttonSlot5"
-        />
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/slot_round"
-        android:text="slot 7"
-        android:textColor="#000000"
-        android:textStyle="bold"
-        android:layout_marginTop="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginLeft="40dp"
-        android:id="@+id/buttonSlot7"
-        android:layout_below="@id/buttonSlot5"
-        />
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/slot_round"
-        android:text="slot 8"
-        android:textColor="#000000"
-        android:textStyle="bold"
-        android:id="@+id/buttonSlot8"
-        android:layout_marginTop="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_below="@id/buttonSlot6"
-        android:layout_toRightOf="@id/buttonSlot7"
-        />
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/slot_round"
-        android:text="slot 9"
-        android:textColor="#000000"
-        android:textStyle="bold"
-        android:id="@+id/buttonSlot9"
-        android:layout_marginTop="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_below="@id/buttonSlot7"
-        />
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/slot_round"
-        android:text="slot 10"
-        android:textColor="#000000"
-        android:textStyle="bold"
-        android:layout_margin="40dp"
-        android:id="@+id/buttonSlot10"
-        android:layout_marginTop="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_below="@id/buttonSlot8"
-        android:layout_toRightOf="@id/buttonSlot9"/>
 
-</RelativeLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlo5"
+            android:text="slot 5"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot6"
+            android:text="slot 6"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot7"
+            android:text="slot 7"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot8"
+            android:text="slot 8"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlo9"
+            android:text="slot 9"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot10"
+            android:text="slot 10"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot11"
+            android:text="slot 11"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot12"
+            android:text="slot 12"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlo13"
+            android:text="slot 13"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot14"
+            android:text="slot 14"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot15"
+            android:text="slot 15"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot16"
+            android:text="slot 16"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlo17"
+            android:text="slot 17"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot18"
+            android:text="slot 18"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot19"
+            android:text="slot 19"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot20"
+            android:text="slot 20"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlo21"
+            android:text="slot 21"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot22"
+            android:text="slot 22"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot23"
+            android:text="slot 23"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot24"
+            android:text="slot 24"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlo25"
+            android:text="slot 25"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot26"
+            android:text="slot 26"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot27"
+            android:text="slot 27"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot28"
+            android:text="slot 28"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlo29"
+            android:text="slot 29"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot30"
+            android:text="slot 30"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot31"
+            android:text="slot 31"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot32"
+            android:text="slot 32"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlo33"
+            android:text="slot 33"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot34"
+            android:text="slot 34"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot35"
+            android:text="slot 35"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot36"
+            android:text="slot 36"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlo37"
+            android:text="slot 37"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot38"
+            android:text="slot 38"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot39"
+            android:text="slot 39"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot40"
+            android:text="slot 40"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlo41"
+            android:text="slot 41"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot42"
+            android:text="slot 42"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot43"
+            android:text="slot 43"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot44"
+            android:text="slot 44"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlo45"
+            android:text="slot 45"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot46"
+            android:text="slot 46"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot47"
+            android:text="slot 47"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot48"
+            android:text="slot 48"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlo49"
+            android:text="slot 49"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot50"
+            android:text="slot 50"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot51"
+            android:text="slot 51"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot52"
+            android:text="slot 52"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlo53"
+            android:text="slot 53"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot54"
+            android:text="slot 54"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot55"
+            android:text="slot 55"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot56"
+            android:text="slot 56"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlo57"
+            android:text="slot 57"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot58"
+            android:text="slot 58"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot59"
+            android:text="slot 59"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot60"
+            android:text="slot 60"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlo61"
+            android:text="slot 61"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot62"
+            android:text="slot 62"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot63"
+            android:text="slot 63"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot64"
+            android:text="slot 64"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlo65"
+            android:text="slot 65"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot66"
+            android:text="slot 66"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot67"
+            android:text="slot 67"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot68"
+            android:text="slot 68"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlo69"
+            android:text="slot 69"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot70"
+            android:text="slot 70"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot71"
+            android:text="slot 71"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot72"
+            android:text="slot 72"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlo73"
+            android:text="slot 73"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot74"
+            android:text="slot 74"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot75"
+            android:text="slot 75"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot76"
+            android:text="slot 76"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlo77"
+            android:text="slot 77"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot78"
+            android:text="slot 78"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot79"
+            android:text="slot 79"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot80"
+            android:text="slot 80"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlo81"
+            android:text="slot 81"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot82"
+            android:text="slot 82"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot83"
+            android:text="slot 83"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot84"
+            android:text="slot 84"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlo85"
+            android:text="slot 85"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot86"
+            android:text="slot 86"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot87"
+            android:text="slot 87"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot88"
+            android:text="slot 88"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlo89"
+            android:text="slot 89"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot90"
+            android:text="slot 90"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot91"
+            android:text="slot 91"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot92"
+            android:text="slot 92"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlo93"
+            android:text="slot 93"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot94"
+            android:text="slot 94"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot95"
+            android:text="slot 95"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slot_round"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/buttonSlot96"
+            android:text="slot 96"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+
+
+
+
+    </LinearLayout>
+v <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/slot_round"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="12dp"
+        android:id="@+id/buttonSlo97"
+        android:text="slot 97"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/slot_round"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="12dp"
+        android:id="@+id/buttonSlot98"
+        android:text="slot 98"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/slot_round"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="12dp"
+        android:id="@+id/buttonSlot99"
+        android:text="slot 99"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/slot_round"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="12dp"
+        android:id="@+id/buttonSlot100"
+        android:text="slot 100"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        />
+
+
+
+
+</LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

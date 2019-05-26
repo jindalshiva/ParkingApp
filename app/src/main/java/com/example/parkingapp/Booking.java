@@ -5,6 +5,7 @@ import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -172,7 +173,7 @@ public class Booking extends AppCompatActivity implements AdapterView.OnItemSele
 
 
     @Override
-    public void onButtonClicked(String text) {
+    public void onButtonClicked(final String text) {
         Toast.makeText(getApplicationContext(),text,Toast.LENGTH_LONG).show();
         slote = text;
 
@@ -184,8 +185,19 @@ public class Booking extends AppCompatActivity implements AdapterView.OnItemSele
                         Toast.makeText(getApplicationContext(),"you choose yes action for alertbox",
                                 Toast.LENGTH_SHORT).show();
                         BookingInformation();
-                        Intent intent = new Intent(Booking.this,MapsActivity.class);
+                        //Intent intent = new Intent(Booking.this,MapsActivity.class);
+                        Intent intent = new Intent(android.content.Intent.ACTION_VIEW,
+                                Uri.parse("geo:0,0?q=28.614687,77.279221 "));
                         startActivity(intent);
+                        //startActivity(intent);
+
+//                        if(text.equals("Slot 1")) {
+//                            Uri gmmIntentUri = Uri.parse("google.navigation:q=Taronga+Zoo,+Sydney+Australia");
+//                            Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+//                            mapIntent.setPackage("com.google.android.apps.maps");
+//                            startActivity(mapIntent);
+//                        }
+
                     }
                 })
                 .setNegativeButton("No", new DialogInterface.OnClickListener() {

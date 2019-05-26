@@ -3,12 +3,12 @@
 
     <string-array name="vehicles_type">
 
-        <item>Car</item>
-        <item>Bike</item>
-        <item>Scooty</item>
-        <item>Bus</item>
-        <item>Truck</item>
-        <item>Scooter</item>
+        <item>Car -10 Rs/hr</item>
+        <item>Bike -5 Rs</item>
+        <item>Scooty -5 Rs/hr</item>
+        <item>Bus -20 Rs/hr</item>
+        <item>Truck -15 Rs/hr</item>
+        <item>Scooter -5 Rs/hr</item>
 
 
     </string-array>

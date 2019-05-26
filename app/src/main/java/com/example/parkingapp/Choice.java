@@ -122,18 +122,18 @@ public class Choice extends AppCompatActivity implements View.OnClickListener {
                 {
                     //if login is successful then
 
-//                    if(mAuth.getCurrentUser().isEmailVerified()){
+                   if(mAuth.getCurrentUser().isEmailVerified()){
 
                         Intent intent = new Intent (Choice.this, Booking.class);
                         intent .addFlags (intent.FLAG_ACTIVITY_CLEAR_TOP);
                         startActivity (intent);
                         Toast.makeText (getApplicationContext (),"log in",Toast.LENGTH_SHORT).show ();
 
-//                    }else {
-//                        Toast.makeText(getApplicationContext(),"Please verify your email address",Toast.LENGTH_LONG).show();
-//
-//                    }
-//
+                    }else {
+                        Toast.makeText(getApplicationContext(),"Please verify your email address",Toast.LENGTH_LONG).show();
+
+                    }
+
 
 
                 }else

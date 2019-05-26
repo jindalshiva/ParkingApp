@@ -33,12 +33,6 @@ public class PaytmFacility extends AppCompatActivity {
         setContentView(R.layout.activity_paytm_facility);
 
 
-        if (ContextCompat.checkSelfPermission(PaytmFacility.this, Manifest.permission.READ_SMS) != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(PaytmFacility.this, new String[]{Manifest.permission.READ_SMS, Manifest.permission.RECEIVE_SMS}, 101);
-        }
-
-
     }
-
 
 }

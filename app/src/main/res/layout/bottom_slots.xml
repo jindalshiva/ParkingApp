@@ -21,7 +21,6 @@
         android:layout_height="wrap_content"
         android:background="@drawable/slot_round"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="12dp"
         android:id="@+id/buttonSlo1"
         android:text="slot 1"
         android:textColor="#ffffff"

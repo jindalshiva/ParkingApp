@@ -2,11 +2,17 @@ package com.example.parkingapp;
 
 import android.app.AlertDialog;
 import android.app.DatePickerDialog;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.app.TimePickerDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
+import android.media.RingtoneManager;
 import android.net.Uri;
 import android.support.v4.app.DialogFragment;
+import android.support.v4.app.NotificationCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -177,6 +183,8 @@ public class Booking extends AppCompatActivity implements AdapterView.OnItemSele
         Toast.makeText(getApplicationContext(),text,Toast.LENGTH_LONG).show();
         slote = text;
 
+
+
         builder.setMessage("Are you sure ?")
                 .setCancelable(false)
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
@@ -189,6 +197,7 @@ public class Booking extends AppCompatActivity implements AdapterView.OnItemSele
                         Intent intent = new Intent(android.content.Intent.ACTION_VIEW,
                                 Uri.parse("geo:0,0?q=28.614687,77.279221 "));
                         startActivity(intent);
+
                         //startActivity(intent);
 
 //                        if(text.equals("Slot 1")) {
@@ -216,7 +225,42 @@ public class Booking extends AppCompatActivity implements AdapterView.OnItemSele
     }
 
 
+    public void sendNotification() {
 
+        Booking_Information booking_information = new Booking_Information();
+
+        String date = textView.toString();
+
+
+        String startTym = textStartTime.toString();
+        String endTym = textEndTime.toString();
+        String slot = slote.toString();
+        NotificationCompat.Builder mBuilder =
+                new NotificationCompat.Builder(this);
+
+        //Create the intent that’ll fire when the user taps the notification//
+
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.androidauthority.com/"));
+        PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, 0);
+
+        mBuilder.setContentIntent(pendingIntent);
+        mBuilder.setColor(Color.BLUE);
+        Uri alarmSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+        mBuilder.setSound(alarmSound);
+
+        mBuilder.setPriority(NotificationManager.IMPORTANCE_HIGH);
+        mBuilder.setContentTitle("Car Parking");
+        mBuilder.setSmallIcon(R.drawable.noti);
+        mBuilder.setContentText(slot);
+
+        mBuilder.setContentText(slot + " " + a +" - "+ b);
+
+        NotificationManager mNotificationManager =
+
+                (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+
+        mNotificationManager.notify(100, mBuilder.build());
+    }
 
     public void BookingInformation() {
 
@@ -229,16 +273,16 @@ public class Booking extends AppCompatActivity implements AdapterView.OnItemSele
         String endTym = textEndTime.toString();
         String slot = slote.toString();
 
-        Booking_Information booking_information = new Booking_Information(vehicleType,vehicleNo,slot,id,date,startTym,endTym);
+        Booking_Information booking_information = new Booking_Information(vehicleType,vehicleNo,slot,id,date,a,b);
 
         databaseReference.child(id).setValue (booking_information);
 
         Toast.makeText (this, "Booking Information added",Toast.LENGTH_LONG).show ();
 
+        sendNotification();
 
 
-
-
+        
 
 
 

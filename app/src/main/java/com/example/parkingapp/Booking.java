@@ -56,6 +56,8 @@ public class Booking extends AppCompatActivity implements AdapterView.OnItemSele
     EditText editvehicleNo;
     String slote;
     AlertDialog.Builder builder;
+    int hrStart, hrEnd;
+    int schedule;
 
 
     @Override
@@ -99,10 +101,12 @@ public class Booking extends AppCompatActivity implements AdapterView.OnItemSele
                 hour = c.get (Calendar.HOUR_OF_DAY);
                 min = c.get (Calendar.MINUTE);
 
+
                 timePickerDialog = new TimePickerDialog (Booking.this, new TimePickerDialog.OnTimeSetListener ( ) {
                     @Override
                     public void onTimeSet(android.widget.TimePicker timePicker, int i, int i1) {
                         a =  i+":"+i1;
+                        hrStart = i + i1/60;
                         textStartTime.setText (a);
                     }
 
@@ -120,10 +124,12 @@ public class Booking extends AppCompatActivity implements AdapterView.OnItemSele
                 hour = c.get (Calendar.HOUR_OF_DAY);
                 min = c.get (Calendar.MINUTE);
 
+
                 timePickerDialog = new TimePickerDialog (Booking.this, new TimePickerDialog.OnTimeSetListener ( ) {
                     @Override
                     public void onTimeSet(android.widget.TimePicker timePicker, int i, int i1) {
                         b=i+":"+i1;
+                        hrEnd = i + i1/60;
                         textEndTime.setText (b);
                     }
 
@@ -227,20 +233,14 @@ public class Booking extends AppCompatActivity implements AdapterView.OnItemSele
 
     public void sendNotification() {
 
-        Booking_Information booking_information = new Booking_Information();
 
-        String date = textView.toString();
-
-
-        String startTym = textStartTime.toString();
-        String endTym = textEndTime.toString();
         String slot = slote.toString();
         NotificationCompat.Builder mBuilder =
                 new NotificationCompat.Builder(this);
 
         //Create the intent that’ll fire when the user taps the notification//
 
-        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.androidauthority.com/"));
+        Intent intent = new Intent(this,Notification.class);
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, 0);
 
         mBuilder.setContentIntent(pendingIntent);
@@ -253,7 +253,14 @@ public class Booking extends AppCompatActivity implements AdapterView.OnItemSele
         mBuilder.setSmallIcon(R.drawable.noti);
         mBuilder.setContentText(slot);
 
-        mBuilder.setContentText(slot + " " + a +" - "+ b);
+        schedule =hrEnd - hrStart;
+        int bookingSchedule = 20;
+
+       // mBuilder.setContentText(slot + " "+schedule);
+
+        mBuilder.setContentText(slot + " " + a +" - "+ b + " Schedule: " + schedule + " Normal Charges: "
+                + schedule*10 + " Booking Charges: " + bookingSchedule +
+                " Total Charges: " + (schedule*10)+bookingSchedule );
 
         NotificationManager mNotificationManager =
 
@@ -272,8 +279,8 @@ public class Booking extends AppCompatActivity implements AdapterView.OnItemSele
         String startTym = textStartTime.toString();
         String endTym = textEndTime.toString();
         String slot = slote.toString();
-
-        Booking_Information booking_information = new Booking_Information(vehicleType,vehicleNo,slot,id,date,a,b);
+        schedule =hrEnd - hrStart;
+        Booking_Information booking_information = new Booking_Information(vehicleType,vehicleNo,slot,id,date,a,b,schedule);
 
         databaseReference.child(id).setValue (booking_information);
 

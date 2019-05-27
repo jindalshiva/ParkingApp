@@ -3,11 +3,12 @@ package com.example.parkingapp;
 public class Booking_Information {
 
     private String vehicleType,vehicleNo, slot,userId,date,stime,etime;
+    int schedule;
 
     Booking_Information(){
     }
 
-    public Booking_Information(String vehicleType, String vehicleNo, String slot, String userId, String date, String stime, String etime) {
+    public Booking_Information(String vehicleType, String vehicleNo, String slot, String userId, String date, String stime, String etime, int schedule) {
         this.vehicleType = vehicleType;
         this.vehicleNo = vehicleNo;
         this.slot = slot;
@@ -15,6 +16,7 @@ public class Booking_Information {
         this.date = date;
         this.stime = stime;
         this.etime = etime;
+        this.schedule = schedule;
     }
 
     public String getVehicleType() {
@@ -71,5 +73,13 @@ public class Booking_Information {
 
     public void setEtime(String etime) {
         this.etime = etime;
+    }
+
+    public int getSchedule() {
+        return schedule;
+    }
+
+    public void setSchedule(int schedule) {
+        this.schedule = schedule;
     }
 }

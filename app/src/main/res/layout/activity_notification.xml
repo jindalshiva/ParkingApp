@@ -1,11 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent" >
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/button_view">
+
 
     <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="400dp"
-        android:text="Hi, Your Detailed notification view goes here...." />
-</LinearLayout>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Billing"
+        android:id="@+id/text"
+        android:padding="30dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="50dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Schedule: "
+        android:layout_below="@id/text"
+        android:id="@+id/textSloView"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textSloView"
+        android:id="@+id/textNormaCharges"
+        android:text="Normal: "
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textNormaCharges"
+        android:id="@+id/texBooking"
+        android:text="Booking: "
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/texBooking"
+        android:id="@+id/texTotal"
+        android:text="Total: "
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textSloView"
+        android:text="hello"
+        android:layout_below="@id/text"
+        android:id="@+id/textSlotView"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textSlotView"
+        android:layout_toRightOf="@id/textNormaCharges"
+        android:id="@+id/textNormalCharges"
+        android:text="Normal: "
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textNormalCharges"
+        android:layout_toRightOf="@id/texBooking"
+        android:id="@+id/textBooking"
+        android:text="Booking: "
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textBooking"
+        android:layout_toRightOf="@id/texTotal"
+        android:id="@+id/textTotal"
+        android:text="Total: "
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        />
+
+
+</RelativeLayout>

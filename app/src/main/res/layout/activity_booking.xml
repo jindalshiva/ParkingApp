@@ -56,17 +56,17 @@
         android:id="@+id/textCalender"/>
 
     <TextView
+        android:id="@+id/textStartTime"
         android:layout_width="135dp"
         android:layout_height="35dp"
         android:layout_below="@id/textCalender"
-        android:layout_marginLeft="60dp"
-        android:background="@drawable/edit_round"
+        android:layout_marginLeft="50dp"
         android:layout_marginTop="30dp"
+        android:background="@drawable/edit_round"
         android:text="Start Time"
-        android:textSize="20dp"
-        android:textColor="#000000"
         android:textAlignment="center"
-        android:id="@+id/textStartTime"/>
+        android:textColor="#000000"
+        android:textSize="20dp" />
 
     <TextView
         android:id="@+id/textEndTime"
@@ -74,7 +74,7 @@
         android:layout_height="35dp"
         android:layout_below="@id/textCalender"
         android:layout_alignParentRight="true"
-        android:layout_marginRight="60dp"
+        android:layout_marginRight="50dp"
         android:layout_marginTop="30dp"
         android:background="@drawable/edit_round"
         android:text="End time"

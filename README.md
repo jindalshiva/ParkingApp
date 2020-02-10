@@ -4,7 +4,7 @@ This application is a solution to a bigger problem of parking. In India, every s
 # Android Application
 Able to find a parking lot for your vehicle, by taking vehicle information and on which date you want to park and for how much time you want to park your vehicle. 
 
-<p>
+<p align="center">
 <img src="Screenshot_2020-02-10-19-42-42-224_com.example.parkingapp.png" width=200px height=400px/>
 <img src="Screenshot_2020-02-10-19-42-47-103_com.example.parkingapp.png" width=200px height=400px/>
 <img src="Screenshot_2020-02-10-19-42-53-802_com.example.parkingapp.png" width=200px height=400px/>
